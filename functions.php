@@ -1,4 +1,5 @@
 <?php
+# here is all functions
 // add nav menus
 function wpb_theme_setup(){
 
