@@ -1,4 +1,4 @@
-
+<!-- here is my footer -->
 <footer class="blog-footer">
  <p>&copy; <?php date('M/D/Y'); echo date('Y ');?> - <?php bloginfo('name');?> </p>
 </footer>
