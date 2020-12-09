@@ -8,14 +8,23 @@
       <h3 class="pb-4 mb-4 font-italic border-bottom">
        My Latest Post
       </h3>
+<!-- blog that im working with -->
 
+      <?php if(have_posts()) : ?> <!-- For checking  post-->
+
+        <?php while(have_posts()) : the_posts(); ?>
       <div class="blog-post">
         <h2 class="blog-post-title">Sample blog post</h2>
         <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-    
         <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
       </div><!-- /.blog-post -->
+
+      <?php endwhile; ?>
+      <?php else: ?>
+
+        <p> <?php __("No Post Found."); ?> </p>
+
+      <?php endif; ?>
 
       <div class="blog-post">
         <h2 class="blog-post-title">Another blog post</h2>
