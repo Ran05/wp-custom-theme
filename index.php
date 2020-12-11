@@ -14,9 +14,10 @@
 
         <?php while(have_posts()) : the_post(); ?>
       <div class="blog-post">
-        <h2 class="blog-post-title">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+        <h2 class="blog-post-title"><?php the_title(); ?></h2>  <!-- added wp functions-->
+        <p class="blog-post-meta"><?php echo date('M/Y'); ?> <a href="#">Mark</a></p>
+        <p><?php the_excerpt();  //the_content(); ?></p> <!-- added wp call content--> 
+        <!-- excerpt meaning to shortcut on wp -->
       </div><!-- /.blog-post -->
 
       <?php endwhile; ?>
