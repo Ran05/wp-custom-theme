@@ -7,7 +7,6 @@
     <meta name="description" content="<?= bloginfo('description');?>">
     <title>
     <?= bloginfo('name');?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
-    
     </title>
 
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/"> -->
@@ -19,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?= bloginfo('stylesheet_url');?>" rel="stylesheet">
+    <!-- Here is my code for calling admin bar -->
+    <?php wp_head();?>
   </head>
 
   <body>
