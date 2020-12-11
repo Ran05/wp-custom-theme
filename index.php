@@ -16,13 +16,15 @@
       <div class="blog-post">
         <h2 class="blog-post-title"><?php the_title(); ?></h2>  <!-- added wp functions-->
         <p class="blog-post-meta"><?php echo date('M/Y'); ?> <a href="#">Mark</a></p>
-        <p><?php the_excerpt();  //the_content(); ?></p> <!-- added wp call content--> 
+       
+        <p><?php the_excerpt();  //the_content(); ?> <!-- added wp call content--> 
+        <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
+        </p> 
         <!-- excerpt meaning to shortcut on wp -->
       </div><!-- /.blog-post -->
 
       <?php endwhile; ?>
       <?php else: ?>
-
         <p> <?php __("No Post Found."); ?> </p>
 
       <?php endif; ?>
