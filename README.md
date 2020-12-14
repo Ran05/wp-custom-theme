@@ -1,3 +1,3 @@
-# wp-Blog-Post-Theme
+# WP-Blog-Post-Theme
 
 This is PinoyFreeCoder wordpress theme development tutorial. 
