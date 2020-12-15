@@ -20,7 +20,7 @@ function wp_custom_list_class($atts, $items, $args){
 //add a function for post length
 
 function set_the_length() {
-    return 35;
+    return 45;
 }
 
 
