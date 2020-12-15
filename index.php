@@ -15,7 +15,7 @@
         <?php while(have_posts()) : the_post(); ?>
       <div class="blog-post">
         <h2 class="blog-post-title"><?php the_title(); ?></h2>  <!-- added wp functions-->
-        <p class="blog-post-meta"><?php echo date('M/Y'); ?> <a href="#">Mark</a></p>
+        <p class="blog-post-meta"><?php the_date(); ?><?php the_time(); ?> <a href="#">Mark</a></p> <!-- added time and date of post-->
        
         <p><?php the_excerpt();  //the_content(); ?> <!-- added wp call content--> 
         <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
@@ -71,7 +71,7 @@
       <div class="p-4">
         <h4 class="font-italic">Archives</h4>
         <ol class="list-unstyled mb-0">
-          <li><a href="#">March 2014</a></li>
+          <!-- <li><a href="#">March 2014</a></li>
           <li><a href="#">February 2014</a></li>
           <li><a href="#">January 2014</a></li>
           <li><a href="#">December 2013</a></li>
@@ -82,7 +82,7 @@
           <li><a href="#">July 2013</a></li>
           <li><a href="#">June 2013</a></li>
           <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li>
+          <li><a href="#">April 2013</a></li> -->
         </ol>
       </div>
 
