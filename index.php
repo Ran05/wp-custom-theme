@@ -15,10 +15,12 @@
         <?php while(have_posts()) : the_post(); ?>
       <div class="blog-post">
         <h2 class="blog-post-title"><?php the_title(); ?></h2>  <!-- added wp functions-->
-        <p class="blog-post-meta"><?php the_date(); ?><?php the_time(); ?> <a href="#">Mark</a></p> <!-- added time and date of post-->
-       
+        <p class="blog-post-meta"><?php the_date(); ?> <!--the date-->
+        <?php the_time(); ?> <!-- added time and date of post-->
+        by <a href="<?php get_author_posts_url(get_the_author_meta("ID")); ?>"> 
+        <?php get_the_author_meta("nickname"); ?> </a></p> 
         <p><?php the_excerpt();  //the_content(); ?> <!-- added wp call content--> 
-        <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
+      <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
         </p> 
         <!-- excerpt meaning to shortcut on wp -->
       </div><!-- /.blog-post -->
