@@ -17,6 +17,13 @@
         <h2 class="blog-post-title"><?php the_title(); ?></h2>  <!-- added wp functions-->
         <p class="blog-post-meta"><?php echo date('M/Y'); ?> <a href="<?php get_author_posts_url(get_the_author_meta("ID")); ?>"> 
         <?php get_the_author_meta("nickname"); ?> </a></p>
+
+        <!-- add featured image -->
+            <?php if(has_post_thumbnail()): ?>
+                <div class="post-thumb">
+                   <?php the_post_thumbnail();?>
+                </div>
+            <?php endif; ?>
        
         <p><?php the_content(); ?> <!-- added wp call content--> 
         <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
