@@ -136,3 +136,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   #menu-main-menu > .menu-item{
     padding: 20px !important;
   }
+
+
+  /* img-thumbnail */
+.post-thumb img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 9px;
+}
