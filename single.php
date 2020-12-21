@@ -27,7 +27,7 @@
        
         <p><?php the_content(); ?> <!-- added wp call content--> 
         <a href="<?php the_permalink(); ?>">Read more</a> <!--added permalink to read more post-->
-        </p> 
+        </p>  
         <hr>
         <?php comments_template(); ?> <!-- comment template --> 
         <!-- excerpt meaning to shortcut on wp -->
