@@ -169,3 +169,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .comments .comments-reply-title{
   font-size: 20px;
 }
+
+
+/* front-page */
+
+/* header section */
+
+.divsampleclass{
+    min-height: max-content;
+    background-color: aquamarine;
+    
+}
