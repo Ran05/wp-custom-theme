@@ -5,9 +5,7 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8 blog-main">
-      <h3 class="pb-4 mb-4 font-italic border-bottom">
-       My Latest Post
-      </h3>
+    
 <!-- blog that im working with -->
 
       <?php if(have_posts()) : ?> <!-- For checking  post-->
