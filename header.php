@@ -9,8 +9,6 @@
     <?= bloginfo('name');?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
     </title>
 
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/"> -->
-
     <!-- Bootstrap core CSS -->
 <link href="<?= bloginfo('template_url');?>/css/bootstrap.min.css" rel="stylesheet">
 
